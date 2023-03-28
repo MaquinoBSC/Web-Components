@@ -10,6 +10,10 @@
             div {
                 border: 2px orange dotted;
             }
+
+            .highlight {
+                background-color: teal;
+            }
         </style>
         <script src="tooltip.js"></script>
         <script src="confirm-link.js"></script>
@@ -18,7 +22,11 @@
 
     <body>
         <p>
-            <mhc-tooltip text="This is the Maquino´s text">Web Components</mhc-tooltip> are awesome!
+            <mhc-tooltip text="This is the Maquino´s text">
+                <span class="highlight">
+                    <a>Web Components</a>
+                </span>
+            </mhc-tooltip> are awesome!
         </p>
         <mhc-tooltip></mhc-tooltip>
         <div>Aqui vamos otra vez</div>
